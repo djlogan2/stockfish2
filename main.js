@@ -6,6 +6,6 @@ app.get("/ok", function(req, res){
     res.json({status: "ok"});
 });
 
-app.listen(process.env.PORT, () =>
-    console.log(`Stockfish client listening on port ${process.env.PORT}!`),
+app.listen(80, () =>
+    console.log("Stockfish client listening on port 80!"),
 );
