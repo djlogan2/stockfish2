@@ -25,5 +25,5 @@ then
 	npm install
 fi
 chmod +x docker/*
-node main.js >& /var/log/stockfish2.log &
-disown
+export ENGINE=docker/stockfish_20011801_x64_modern
+node main.js >& /var/log/stockfish2.log & disown
