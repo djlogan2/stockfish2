@@ -8,7 +8,7 @@ fi
 if ! type node >& /dev/null
 then
 	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-	apt-get install -y nodejs
+	apt-get install -y nodejs npm
 fi
 
 cd /opt
